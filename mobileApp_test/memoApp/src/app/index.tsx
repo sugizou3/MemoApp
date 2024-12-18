@@ -1,43 +1,19 @@
 import { View, Text, StyleSheet } from "react-native";
 
+import Header from "../components/Header";
+import MemoListItem from "../components/MemoListItem";
+import CircleButton from "../components/CircleButton";
+
 const Index = (): JSX.Element => {
   return (
     <View style={styles.container}>
+      <Header />
       <View>
-        <Text>Memo App</Text>
-        <Text>ログアウト</Text>
+        <MemoListItem />
+        <MemoListItem />
+        <MemoListItem />
       </View>
-
-      <View>
-        <View>
-          <Text>買い物リスト</Text>
-          <Text>2023年10月1日 10:00</Text>
-        </View>
-        <View>
-          <Text>X</Text>
-        </View>
-      </View>
-
-      <View>
-        <View>
-          <Text>買い物リスト</Text>
-          <Text>2023年10月1日 10:00</Text>
-        </View>
-        <View>
-          <Text>X</Text>
-        </View>
-      </View>
-
-      <View>
-        <View>
-          <Text>買い物リスト</Text>
-          <Text>2023年10月1日 10:00</Text>
-        </View>
-        <View>
-          <Text>X</Text>
-        </View>
-      </View>
-      <View><Text>＋</Text></View>
+      <CircleButton>＋</CircleButton>
     </View>
   );
 };
@@ -45,8 +21,7 @@ const Index = (): JSX.Element => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: "#ffffff",
   },
 });
 
